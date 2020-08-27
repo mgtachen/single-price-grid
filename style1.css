@@ -1,0 +1,143 @@
+:root{
+--Cyan: hsl(179, 62%, 43%);
+--Bright-Yellow: hsl(71, 73%, 54%);
+--Light-Gray: hsl(204, 43%, 93%);
+--Grayish-Blue: hsl(218, 22%, 67%);
+--light-Cyan: hsl(179, 54% , 63%);
+}
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3{
+	line-height: 2;
+}
+
+h1{
+    color: var(--Cyan);
+}
+
+h2{
+    color: var(--Bright-Yellow);
+    font-size: 1.3em;
+}
+
+p{
+    line-height: 1.5;
+}
+
+.top p{
+    color: var(--Grayish-Blue);
+}
+
+body{
+	background: var(--Light-Gray);
+	font-family: 'Karla', sans-serif;
+	font-size: 16px;
+}
+
+.box {
+    width: 660px;
+    margin: 100px auto;
+    box-shadow: 7px 10px 19px -9px rgba(0,0,0,0.30);
+    border-radius: 15px;
+}
+
+.top, .left, .right {
+    padding: 30px;
+}
+
+.top {
+    width: 100%;
+    background: #ffffff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-sizing: border-box;
+}
+.left {
+    background-color: var(--Cyan);
+    border-bottom-left-radius: 15px;
+}
+.left-content {
+    width: 90%;
+}
+.bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: var(--Light-Gray);
+}
+
+
+.left h3 {
+    margin-bottom: 10px;
+}
+
+.left p {
+    margin: 10px auto;
+}
+.big {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 8px 8px 8px 0;
+}
+
+.faint-paragraph {
+    opacity: 0.6;
+}
+
+.button {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    text-decoration: none;
+    background-color: var(--Bright-Yellow);
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 7px 10px 19px -9px rgba(0,0,0,0.39);
+}
+
+.right {
+    background-color: var(--light-Cyan);
+    border-bottom-right-radius: 13px;
+    color: #ffffff;
+}
+.right h3 {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    opacity: 0.8;
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+li {
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .box {
+        width: 360px;
+    }
+   
+    .bottom {
+        grid-template-columns: 1fr;
+    }
+
+    .left {
+        border-bottom-left-radius: 0;
+    }
+
+    .right {
+        border-bottom-left-radius: 15px;
+    }
+
+}
+
+.attribution { 
+	font-size: 11px; text-align: center; 
+	 }
